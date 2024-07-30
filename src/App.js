@@ -12,6 +12,8 @@ import DisplayStateHandler from "./pages/DisplayStateHandler";
 import DisplayStyles from "./pages/DisplayStyles";
 import FormHandling from "./pages/FormHandling";
 import Elements from "./pages/Elements";
+import Timer from "./components/Timer";
+import ParameterReader from "./pages/ParameterReader";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path="/state" element={<DisplayStateHandler />} />
         <Route path="/styles" element={<DisplayStyles />} />
         <Route path="/forms" element={<FormHandling />} />
+        <Route path="/timer" element={<Timer />} />
+        <Route path="/param/:id" element={<ParameterReader />} />
         <Route path="*" element={<>This page does not exist.</>} />
       </Routes>
     </BrowserRouter>
